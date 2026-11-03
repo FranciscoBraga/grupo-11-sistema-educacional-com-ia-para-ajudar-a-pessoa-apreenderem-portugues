@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Aprende Português</title>
+<link rel="stylesheet" href="/static/pt.css">
+</head>
+<body>
+<header><h1>Aprende Portugues</h1><span id="xp"></span></header>
+
+<section id="cadastro">
+  <input id="nome" placeholder="Seu nome">
+  <button onclick="comecar()">Começar</button>
+</section>
+
+<section id="treino">
+  <h2>Exercício</h2>
+  <p id="tema"></p>
+  <p id="enunciado"></p>
+  <input id="resposta">
+  <button onclick="responder()">Responder</button>
+  <button onclick="verDica()">Dica</button>
+  <p id="feedback"></p>
+  <p id="dica"></p>
+  <button onclick="proximo()">Próximo</button>
+</section>
+
+<section id="tutorBox">
+  <h2>Converse com o tutor</h2>
+  <textarea id="textoTutor" placeholder="Escreva uma frase e o tutor vai te ajudar a pensar"></textarea>
+  <button onclick="perguntarTutor()">Enviar</button>
+  <div id="respTutor"></div>
+</section>
+
+<section>
+  <h2>Meu progresso</h2>
+  <button onclick="verProgresso()">Atualizar</button>
+  <div id="progresso"></div>
+</section>
+
+<script src="/static/pt.js"></script>
+</body>
+</html>
